@@ -1,0 +1,12 @@
+version: "0.0"
+services:                    
+    back:                    
+        build: back-flask
+        container_name: back 
+        ports:               
+          - 5001:5001
+    front:                   
+        build: front-vue         
+        container_name: front
+        ports:               
+          - 8080:8080      
